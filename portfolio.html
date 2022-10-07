@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Create a Portfolio Gallery
+		using HTML and CSS
+	</title>
+	
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1">
+		
+	<style>
+	
+		/* wildcard styling */
+		* {
+			box-sizing: border-box;
+		}
+		
+		/* padding for whole body */
+		body {
+			padding: 15px;
+		}
+		
+		/* styling body */
+		.container {
+			max-width: 1200px;
+			margin: auto;
+		}
+		
+		h1 {
+			color: green;
+		}
+		
+		/* anchor tag decoration */
+		a {
+			text-decoration: none;
+			color: #5673C8;
+		}
+		
+		a:hover {
+			color: lightblue;
+		}
+		
+		/* paragraph tag decoration */
+		p {
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 4;
+			overflow: hidden;
+	
+		}
+		
+		/* row and column decoration */
+		.row {
+			margin: 0px -18px;
+			padding: 8px;
+		}
+		
+		.row > .column {
+			padding: 6px;
+		}
+		
+		.column {
+			float: left;
+			width: 25%;
+		}
+		
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		
+		/* content decoration */
+		.content {
+			background-color: white;
+			padding: 10px;
+			border: 1px solid gray;
+		}
+		
+		/* window size 850 width set */
+		@media screen and (max-width: 850px) {
+			.column {
+				width: 50%;
+			}
+		}
+	
+		/* window size 400 width set */
+		@media screen and (max-width: 400px) {
+			.column {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	
+	<!-- title and tag -->
+	<div class="container">
+		<h1>KAVALI PAVAN KUMAR</h1>
+		<h3>COMPUTER SCIENCE ENGINEERING</h3>
+		<hr>
+
+		<!-- Content of the body-->
+		<h2>Portfolio</h2>
+		<div class="row">
+			<div class="column">
+				<div class="content">
+					<img src=
+"/home/rguktrkvalley/Desktop/Pavan.jpg"
+						alt="" style="width:100%">
+					<h3>
+						<a href="#">HTML Tutorials</a>
+					</h3>
+					
+
+
+
+                                       <p>
+						I am K.Pavan Kumar Studying B.tech Cse
+						form Kuppam Engineering College,I am 
+						very much thankful for the LetsUpgrade 
+						for Teaching Front end Using the HTML
+						and CSS.
+					</p>
+
+
+
+
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</body>
+
+</html>		
+
